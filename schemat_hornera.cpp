@@ -24,7 +24,7 @@ int main() {
             cout << "a" << i << " = ";
             cin >> wspol[i];    
     }
-
+    // wypisywanie
     for(int i = stopien; i >= 0; i--) {
             if (wspol[i] >= 0 && i != stopien ) {
                     cout << " + ";
@@ -42,11 +42,11 @@ int main() {
     cout << "Podaj wartosc x: " << '\n';
     cin >> wartosc_x;
 
-    float b = wspol[stopien];
+    float inny = wspol[stopien];
 
     for(int i = stopien - 1; i >= 0; i--) {
-        wynik = wspol[i] + b*wartosc_x;
-        b = wynik;
+        wynik = wspol[i] + inny*wartosc_x;
+        inny = wynik;
     }
     cout << "--------------------------------" << '\n';
     cout << "Wynik wielomianu dla x = " << wartosc_x << " to: " << wynik << '\n';
